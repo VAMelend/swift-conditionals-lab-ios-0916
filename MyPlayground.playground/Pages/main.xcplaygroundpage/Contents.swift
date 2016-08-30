@@ -25,38 +25,47 @@ let b = 32
 ### 1. Print the result of a greater than or equal to b
 */
 // write your code here
+print (a >= b)
 
 
 /*: Question 2
 ### 2. Print the result of a modulo b is equal to zero
 */
 // write your code here
+print (a%b==0)
 
 
 /*: Question 3
 ### 3. Print the result of y times b less than or equal to a
 */
 // write your code here
+print ((y*b) <= a)
 
 
 /*: Question 4
 ### 4. Print the inverse of a greater than or equal to b
 */
 // write your code here
-
+print (!(a>=b))
 
 
 /*: Question 5
 ### 5. Print "true" if a modulo b is equal to zero
 */
 // write your code here
+if a%b == 0 {
+ print ("true")
+}
+
 
 
 /*: Question 6
 ### 6. Print "true" if a divided by b is greater than x
 */
 // write your code here
-
+if Int(a/b)>Int(x) {
+    print ("true")
+}
 
 
 /*: Question 7
@@ -64,13 +73,21 @@ let b = 32
 */
 // write your code here
 
-
+if Int(y)/Int(x)>Int(3) {
+    print("true")
+}
+else {
+    print("false")
+}
 
 
 /*: Question 8
 ### 8. Print "true" if y is greater than x and a divided by b is greater than 9
 */
 // write your code here
+if ((Int(y)>Int(x)) && (Int(a)/Int(b))>Int(9)) {
+    print("true")
+}
 
 
 
@@ -79,17 +96,44 @@ let b = 32
 ### 9. Write a function "isGreater" that takes two Int arguments and returns true if the first is greater than the second and false if they're not
 */
 // write your code here
-
-
-
-
-
+func isGreater(a:Int, b:Int) {
+    if a>b {
+        print ("true")
+    }
+    else {
+        print("false")
+    }
+}
 
 /*: Question 10
 ### 10. Write a function "isForceWith" that takes a String argument and returns true if the argument is the name of someone with whom the force is strong, and otherwise returns false. People who have the force are Luke, Leia, Anakin, Obi Wan, Yoda, Vader.
 */
 // write your code here
-
+func isForceWith(stork:String){
+    if stork == "Luke"
+    {print ("true")
+    }
+    if stork == "Leia"
+    {print ("true")
+        }
+    if stork == "Anakin"{
+        print("true")
+    }
+    if stork == "Obi Wan" {
+        print ("true")
+    }
+    if stork == "Yoda" {
+        print("true")
+    }
+    if stork == "Vader"{
+        print("true")
+    }
+    
+    else {
+        print ("false")
+    }
+    
+}
 
 
 /*: Question 11
@@ -97,11 +141,17 @@ let b = 32
 */
 // write your code here
 
-
-
+func broke(me:Int, you: Int){
+    if (((Int(me) - 10)>0) && ((Int(you)-10)>0)){
+        me+10
+        you-10
+}
 
 
 /*:
  Checkout the solution branch - git co solution or git checkout solution and then scroll back down to this very spot to see a link that directs you to the solutions to the above questions.
  */
 // ❤️
+
+
+
